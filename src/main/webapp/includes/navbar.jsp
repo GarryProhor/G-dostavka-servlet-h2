@@ -13,16 +13,22 @@
                 <li class="nav-item">
                     <a class="nav-link" href="card.jsp">Card</a>
                 </li>
+                <%
+                if(auth != null){%>
                 <li class="nav-item">
                     <a class="nav-link disabled" href="orders.jsp">Orders</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Logout</a>
+                    <a class="nav-link disabled" href="log-out">Logout</a>
 
                 </li>
+                <%}else {%>
                 <li class="nav-item">
                     <a class="nav-link disabled" href="login.jsp">Login</a>
                 </li>
+                <%}
+                %>
+
             </ul>
         </div>
     </div>
