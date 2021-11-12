@@ -26,6 +26,9 @@
                 <li class="nav-item">
                     <a class="nav-link disabled" href="login.jsp">Login</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="registration.jsp">Registration</a>
+                </li>
                 <%}
                 %>
 
