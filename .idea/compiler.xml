@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="RegTask" />
+        <module name="G-dostavka-servlet-h2" />
       </profile>
     </annotationProcessing>
   </component>
