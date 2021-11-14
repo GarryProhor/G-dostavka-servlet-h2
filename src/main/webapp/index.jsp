@@ -4,6 +4,8 @@
 <%@ page import="by.prohor.model.Product" %>
 <%@ page import="by.prohor.dao.ProductDAO" %>
 <%@ page import="java.util.List" %>
+<%@ page import="by.prohor.model.Cart" %>
+<%@ page import="java.util.ArrayList" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
     User auth =(User) request.getSession().getAttribute("auth");
@@ -19,6 +21,11 @@
     }
     assert productDAO != null;
     List<Product> products = productDAO.getAllProduct();
+
+    ArrayList<Cart> cart_list = (ArrayList<Cart>) session.getAttribute("cart-list");
+    if (cart_list != null) {
+        request.setAttribute("cart_list", cart_list);
+    }
 %>
 <html>
 <head>

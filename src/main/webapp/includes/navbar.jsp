@@ -11,7 +11,7 @@
                     <a class="nav-link" href="index.jsp">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="card.jsp">Card</a>
+                    <a class="nav-link" href="card.jsp">Card<span class="badge badge-danger px-1">${cart_list.size()}</span></a>
                 </li>
                 <%
                 if(auth != null){%>
